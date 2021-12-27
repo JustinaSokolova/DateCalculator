@@ -1,0 +1,17 @@
+.timer {
+  display: block;
+  width: 170px;
+  height: 45px;
+  font-size: 36px;
+  color: #04125f;
+  border: 1px solid #031057;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button {
+  background-color: #babcf6;
+  border: 1px solid #031057;
+  border-radius: 3px;
+  padding: 5px 16px;
+}
