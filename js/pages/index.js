@@ -1,9 +1,7 @@
 import { startTimer, stopTimer, resetTimer } from "../utils/timer.js";
 
-const showCalc = document.querySelector("#ShowCalc");
-const showTimer = document.querySelector("#ShowTimer");
-const calcBlock = document.querySelector("#CalcBlock");
-const timerBlock = document.querySelector("#TimerBlock");
+// const calcBlock = document.querySelector("#CalcBlock");
+// const timerBlock = document.querySelector("#TimerBlock");
 
 const hoursInput = document.querySelector("#hours");
 const minutesInput = document.querySelector("#minutes");
@@ -48,21 +46,21 @@ hoursInput.addEventListener("input", (event) => {
 
 /////
 
-showCalc.onclick = OnCalcClick;
-showTimer.onclick = OnTimerClick;
+// showCalc.onclick = OnCalcClick;
+// showTimer.onclick = OnTimerClick;
 
-function OnCalcClick() {
-  calcBlock.style.display = "block";
-  timerBlock.style.display = "none";
-}
+// function OnCalcClick() {
+//   calcBlock.style.display = "block";
+//   timerBlock.style.display = "none";
+// }
 
-function OnTimerClick() {
-  calcBlock.style.display = "none";
-  timerBlock.style.display = "block";
-}
+// function OnTimerClick() {
+//   calcBlock.style.display = "none";
+//   timerBlock.style.display = "block";
+// }
 
-calcBlock.style.display = "none";
-timerBlock.style.display = "none";
+// calcBlock.style.display = "none";
+// timerBlock.style.display = "none";
 
 startBtn.onclick = () => {
   if (secondsValue > 0 || minutesValue > 0 || hoursValue > 0) {
@@ -71,7 +69,7 @@ startBtn.onclick = () => {
     minutesValue = 0;
     hoursValue = 0;
   } else {
-    alert("Введите таймер");
+    alert("Введите стартовые данные!");
   }
 };
 
@@ -97,6 +95,6 @@ function timerCallback(s, m, h) {
   hours.value = format(h);
 }
 
-seconds.value = "00";
-minutes.value = "00";
-hours.value = "00";
+// seconds.value = "00";
+// minutes.value = "00";
+// hours.value = "00";
